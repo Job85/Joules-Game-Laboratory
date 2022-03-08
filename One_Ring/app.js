@@ -1,11 +1,10 @@
 
-
-const letsPlay = document.querySelector('#letsPlay');
-
 const easyLvl = document.querySelector('#easyLvl')
 const mediumLvl = document.querySelector('#mediumLvl')
 const hardLvl = document.querySelector('#hardLvl')
 const expertLvl = document.querySelector('#expertLvl')
+
+// const shuffleQuestions, currentQuestionIndex
 
 const btnA = document.querySelector('#btnA')
 const btnB = document.querySelector('#btnB')
@@ -79,22 +78,41 @@ let player2Score = 0;
 //     playerAnswers = [];
 
 
-
-
-// letsPlay.addEventListener('click', goToGame);
-// function goToGame() {
-//     console.log('button clicked')
-// }
-btnA.addEventListener('click', selectA)
-btnB.addEventListener('click', selectB)
-btnC.addEventListener('click', selectC)
-btnD.addEventListener('click', selectD)
-
-easyLvl.addEventListener('click', chooseEasy)
+easyLvl.addEventListener('click', chooseEasy);
 mediumLvl.addEventListener('click', chooseMedium)
 hardLvl.addEventListener('click', chooseHard)
 expertLvl.addEventListener('click', chooseExpert)
 
+btnA.addEventListener('click', selectA)
+btnB.addEventListener('click', selectB)
+btnC.addEventListener('click', selectC)
+btnD.addEventListener('click', selectD)
+submit.addEventListener('click', submitQ)
+
+
+function chooseEasy() {
+
+}
+
+function chooseMedium() {
+
+};
+
+function chooseHard() {
+
+};
+
+function chooseExpert() {
+
+};
+
+function pushNextQuestion() {
+
+}
+
+function selectAnswer() {
+
+}
 function selectA() {
 
 }
@@ -110,23 +128,14 @@ function selectD() {
 
 }
 
+function submitQ() {
 
-function chooseEasy() {
-    console.log('button easy clicked')
 }
 
-function chooseMedium() {
-    console.log('button md clicked')
-}
 
-function chooseHard() {
-    console.log('button hard clicked')
-}
 
-function chooseExpert() {
-    console.log('button expert clicked')
-}
-// submit.addEventListener('click', onclick)
+
+
 
 // reset.addEventListener('click', onclick)
 
