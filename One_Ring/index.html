@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1 id="Game Title">One Trivia Game to Rule Them ALL!!</h1>
+        <h1 id="gameTitle">One Trivia Game to Rule Them ALL!!</h1>
     </header>
     <section>
         <div class="container board">
@@ -26,12 +26,15 @@
                 <div class="player2">0</div>
             </section>
         </div>
-        <div>
-            <Card-Display id="Cards">Cards Will Go Here</Card-Display>
-        </div>
-        <div class="control-buttons">
-            <button id="start">Start</button>
+        <div class="questionContainer">
+            <div id="question">Questions</div>
+            <div class="qButtons"><button id="buttonA" data-index="0"></button></div>
+            <div class="qButtons"><button id="buttonB" data-index="1"></button></div>
+            <div class="qButtons"><button id="buttonC" data-index="2"></button></div>
+            <div class="qButtons"><button id="buttonD" data-index="3"></button></div>
             <button id="submit">Submit</button>
+        </div>
+        <div class="control-button">
             <button id="reset">Play Again</button>
         </div>
     </section>

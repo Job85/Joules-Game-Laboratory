@@ -1,5 +1,7 @@
 console.log('JS is connected')
 
+
+
 questions = [
     'How long did J.R.R Tolkien spend completing the Lord of the Rings books?',
     'How many rings were given to the Dwarf-kings?',
@@ -54,8 +56,9 @@ answers = [
     ['a. ', 'b. ', 'c. ', 'd. '],
     ['a. ', 'b. ', 'c. ', 'd. '],
     ['a. ', 'b. ', 'c. ', 'd. ']
-]
-
+],
+    correctAnswers = [],
+    playerAnswers = [];
 
 const player1 = 'Player 1 has WON!';
 const player2 = 'Player 2 has WON!';
@@ -64,15 +67,27 @@ const player2 = 'Player 2 has WON!';
 const start = document.querySelector('#start')
 const submit = document.querySelector('#submit')
 const reset = document.querySelector('#reset')
+const letsPlay = document.querySelector('#letsPlay')
 
+const buttonA = document.querySelector('#buttonA')
+const buttonB = document.querySelector('#buttonB')
+const buttonC = document.querySelector('#buttonC')
+const buttonD = document.querySelector('#buttonD')
 
+letsPlay.addEventListener('click', onclick)
+function () {
+
+}
 
 start.addEventListener('click', onclick)
-function clickStart() {
+function () {
 
 }
 console.log('start button clicked')
 
 
-submit.addEventListener('click',)
-reset.addEventListener('click',)
+submit.addEventListener('click', onclick)
+function () {
+
+}
+reset.addEventListener('click', onclick)
