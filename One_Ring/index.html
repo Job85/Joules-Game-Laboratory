@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>One Ring Trivia</title>
 </head>
@@ -26,13 +26,20 @@
                 <div class="player2">0</div>
             </section>
         </div>
-        <div class="questionContainer">
-            <div id="question">Questions</div>
-            <div class="qButtons"><button id="buttonA" data-index="0"></button></div>
-            <div class="qButtons"><button id="buttonB" data-index="1"></button></div>
-            <div class="qButtons"><button id="buttonC" data-index="2"></button></div>
-            <div class="qButtons"><button id="buttonD" data-index="3"></button></div>
-            <button id="submit">Submit</button>
+        <section id="lvlContainer" class="hide">
+            <div>Choose Question Level</div>
+            <div class="qLevel"><button id="easyLvl">Easy</button></div>
+            <div class="qLevel"><button id="mediumLvl">Medium</button></div>
+            <div class="qLevel"><button id="hardLvl">Hard</button></div>
+            <div class="qLevel"><button id="expertLvl">Expert</button></div>
+        </section>
+        <div id="qContainer" class="hide">
+            <div id="question">Question:</div>
+            <div class="qButtons"><button id="btnA" data-index="0">Answer A</button></div>
+            <div class="qButtons"><button id="btnB" data-index="1">Answer B</button></div>
+            <div class="qButtons"><button id="btnC" data-index="2">Answer C</button></div>
+            <div class="qButtons"><button id="btnD" data-index="3">Answer D</button></div>
+            <button id="submit" class="hide">Submit</button>
         </div>
         <div class="control-button">
             <button id="reset">Play Again</button>
