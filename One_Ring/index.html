@@ -7,43 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="app.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>One Ring Trivia</title>
+    <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h1 id="gameTitle">One Trivia Game to Rule Them ALL!!</h1>
+        <h1>One Trivia Game to Rule Them ALL!</h1>
     </header>
-    <section>
-        <div class="container board">
-            <h2 id="scorecard">Scorecard</h2>
-            <section>
-                <div class="player1">Player 1</div>
-                <div class="player2">Player 2</div>
-            </section>
-            <section id="score">
-                <div class="player1">0</div>
-                <div class="player2">0</div>
-            </section>
+    <section id="playerContainer">
+        <div class="playerName">player1</div>
+        <div class="playerName">player2</div>
+        <div class="playerName">player3</div>
+        <div class="score" id="p1Score">Score</div>
+        <div class="score" id="p2Score">Score</div>
+        <div class="score" id="p3Score">Score</div>
+    </section>
+    <div id="container">
+        <div class="cat">Elves</div>
+        <div class="cat">Dwarves</div>
+        <div class="cat">Hobbits</div>
+        <div class="cat">Books</div>
+        <div class="cat">Timelines</div>
+        <div class="cat">Potpourri</div>
+        <div class="clues" class="100"><button class="btn" id="btn1">100</button></div>
+        <div class="clues" class="200"><button class="btn" id="btn2">100</button></div>
+        <div class="clues" class="300"><button class="btn" id="btn3">100</button></div>
+        <div class="clues" class="400"><button class="btn" id="btn4">100</button></div>
+        <div class="clues" class="500"><button class="btn" id="btn5">100</button></div>
+        <div class="clues" class="100"><button class="btn" id="btn6">100</button></div>
+        <div class="clues" class="200"><button class="btn" id="btn7">200</button></div>
+        <div class="clues" class="300"><button class="btn" id="btn8">200</button></div>
+        <div class="clues" class="400"><button class="btn" id="btn9">200</button></div>
+        <div class="clues" class="500"><button class="btn" id="btn10">200</button></div>
+        <div class="clues" class="100"><button class="btn" id="btn11">200</button></div>
+        <div class="clues" class="200"><button class="btn" id="btn12">200</button></div>
+        <div class="clues" class="300"><button class="btn" id="btn13">300</button></div>
+        <div class="clues" class="400"><button class="btn" id="btn14">300</button></div>
+        <div class="clues" class="500"><button class="btn" id="btn15">300</button></div>
+        <div class="clues" class="100"><button class="btn" id="btn16">300</button></div>
+        <div class="clues" class="200"><button class="btn" id="btn17">300</button></div>
+        <div class="clues" class="300"><button class="btn" id="btn18">300</button></div>
+        <div class="clues" class="400"><button class="btn" id="btn19">400</button></div>
+        <div class="clues" class="500"><button class="btn" id="btn20">400</button></div>
+        <div class="clues" class="100"><button class="btn" id="btn21">400</button></div>
+        <div class="clues" class="200"><button class="btn" id="btn22">400</button></div>
+        <div class="clues" class="300"><button class="btn" id="btn23">400</button></div>
+        <div class="clues" class="400"><button class="btn" id="btn24">400</button></div>
+        <div class="clues" class="500"><button class="btn" id="btn25">500</button></div>
+        <div class="clues" class="100"><button class="btn" id="btn26">500</button></div>
+        <div class="clues" class="200"><button class="btn" id="btn27">500</button></div>
+        <div class="clues" class="300"><button class="btn" id="btn28">500</button></div>
+        <div class="clues" class="400"><button class="btn" id="btn29">500</button></div>
+        <div class="clues" class="500"><button class="btn" id="btn30">500</button></div>
+    </div>
+    <div class="questionGrid">
+        <div id="container">
         </div>
-        <section id="lvlContainer" class="hide">
-            <div>Choose Question Level</div>
-            <div class="qLevel"><button id="easyLvl">Easy</button></div>
-            <div class="qLevel"><button id="mediumLvl">Medium</button></div>
-            <div class="qLevel"><button id="hardLvl">Hard</button></div>
-            <div class="qLevel"><button id="expertLvl">Expert</button></div>
-        </section>
-        <div id="qContainer" class="hide">
-            <div id="question">Question:</div>
-            <div class="qButtons"><button id="btnA" data-index="0">Answer A</button></div>
-            <div class="qButtons"><button id="btnB" data-index="1">Answer B</button></div>
-            <div class="qButtons"><button id="btnC" data-index="2">Answer C</button></div>
-            <div class="qButtons"><button id="btnD" data-index="3">Answer D</button></div>
-            <button id="submit" class="hide">Submit</button>
-        </div>
-        <div class="control-button">
-            <button id="reset">Play Again</button>
-        </div>
+    </div>
     </section>
 </body>
 
