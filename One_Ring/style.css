@@ -52,4 +52,8 @@ h1 {
 .btn {
     color: #f4c91d; 
     background-color: dimgray;
+    border: 3px solid rgba(31, 29, 29, 0.406);
+    padding: 3px;
+    box-shadow: 1px 1px 5px rgba(31, 29, 29, 0.406);
+    width: 100px;
  }

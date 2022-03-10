@@ -33,23 +33,19 @@ const btn = [
     document.querySelector('#potpourri500')
 ]
 
+let questions = [
+    {
+        title: 'elves for 100',
+        question: 'This elf was the daughter of Elrond \n a. Eowyn \n b. Galadriel \n c. Arwen \n d. Morwen',
+        answer: 'c'
+    }
+]
+function showClue(evt) {
+    let userAnswer = prompt(questions[0].question)
+    console.log(questions)
+}
+
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', showClue);
-    function showClue(evt) {
-        evt.target.display.prompt = 'questions';
-    }
+
 }
-let questions = {
-    title: 'hobbits for 100',
-    choices: [
-        {
-            answer: 'frodo', answer: 'sam', answer: 'bilbo', answer: ''
-        }
-    ],
-    title: 'hobbits for 200',
-    choises: [
-        {
-            answer: 
-        }
-    ]
-} 
