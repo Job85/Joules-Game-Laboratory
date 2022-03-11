@@ -1,4 +1,4 @@
-let userStart = alert('Select a clue by clicking on any point value')
+let userStart = alert('Select a clue by clicking on any point value. Point values indicate level of difficulty')
 let userScore1 = document.querySelector('#p1Score')
 let userScore2 = document.querySelector('#p2Score')
 
@@ -20,8 +20,6 @@ const togglePlayerTurn = () => {
     }
 
 }
-
-
 
 let btnList = []
 let btnIDs = [
@@ -59,7 +57,6 @@ let btnIDs = [
 for (let i = 0; i < btnIDs.length; i++) {
     btnList.push(document.querySelector(btnIDs[i]));
 }
-
 
 let questions = [
     {
@@ -245,15 +242,11 @@ let questions = [
 
 ]
 
-
-
-
 for (let i = 0; i < btnList.length; i++) {
     btnList[i].addEventListener('click', (evt) => {
         let userAnswer = prompt(questions[i].question)
         while (userAnswer === null) {
             userAnswer = prompt(questions[i].question);
-
         }
         if (userAnswer.toLowerCase() === questions[i].answer) {
             if (player1Turn === true) {

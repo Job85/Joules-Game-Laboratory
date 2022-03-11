@@ -1,24 +1,31 @@
 # One Ring Trivia Game
 
-
-# Description
-    One trivia game to rule them all! Players will be given a choice of card difficulty level in order to accumulate points. After a set amount of cards drawn the player with the highest score wins. Trivia answers are checked against the [One_Ring_API](https://the-one-api.dev/) for accuracy.
-# How to Get Started
-
+## Description
+    One trivia game to rule them all!\
+    Players will have six categories with five clues in each thirty clues total, to choose from.\
+    Each clue is given a point value which indicates it's degree of difficulty.  
+    A correct answer results in the points associated with the clue being awarded  
+    to the players score.\
+    Once all thirty clues have been read and answered the player with the highest totaled score is declared the winner.
+## How to Get Started
+Player 1 makes the first selection and then turns will alternate.\
+Selections are made by clicking the point value button under each category
 ## Rules
-    Players will alternate turns and after all players have taken a turn the round will conclude. At the beggining of each turn the player will choose from which level they want to answer a question from. The player with the highest score after 15 rounds will be declared the winner.
+    Turns are alternated until all thirty clues have been read through and answered.\
+    The player with the highest total at the end of the round will be declared the winner.
 
-##
-    Card Levels - Points worth
-    Easy - 3 points
-    Medium - 5 points
-    Hard - 8 points
-    Expert - 12 points
+## Catagories
+* Elves
+* Dwarves
+* Hobbits
+* Books
+* Locations
+* Potpourri
 
-# Credits
+## Credits
 
-## Trello Board
-[Trello_Board](https://trello.com/b/wYfxM4qM/one-ring-board)
+### MDN Documentation
+[Event_Target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 
-## One Ring API
-[One_Ring_API](https://the-one-api.dev/)
+### A README 101
+[Mark_Down](https://www.makeareadme.com/)
