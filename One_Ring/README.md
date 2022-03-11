@@ -26,15 +26,14 @@
     * New Clues to play multiple times
 
 ## Credits & Citations
-### MDN Documentation
-[Event_Target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 
-### A README 101
-[Mark_Down](https://www.makeareadme.com/)
+[Event Target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 
-###
-[Back_Ground_Image_Styling](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
+[README 101](https://www.makeareadme.com/)
+
+[Back Ground Image Styling](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
 
 ## For Tolkien Fans
-[Tolkien_Gateway](http://tolkiengateway.net/wiki/Main_Page)
-[LOTR_Fandom](https://lotr.fandom.com/wiki/Main_Page)
+[Tolkien Gateway](http://tolkiengateway.net/wiki/Main_Page)
+
+[LOTR Fandom](https://lotr.fandom.com/wiki/Main_Page)
