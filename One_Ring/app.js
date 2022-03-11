@@ -1,37 +1,65 @@
+let userStart = alert('Select a clue by clicking on any point value')
+let userScore1 = document.querySelector('#p1Score')
+let userScore2 = document.querySelector('#p2Score')
+
+let player1Score = 0
+let player2Score = 0
+
+let player1Turn = true
+let player2Turn = false
+
+let answeredQuestionsCount = 0;
+
+const togglePlayerTurn = () => {
+    if (player1Turn === true) {
+        player1Turn = false;
+        player2Turn = true;
+    } else {
+        player2Turn = false;
+        player1Turn = true;
+    }
+
+}
 
 
-const btn = [
-    document.querySelector('#elves100'),
-    document.querySelector('#dwarves100'),
-    document.querySelector('#hobbits100'),
-    document.querySelector('#books100'),
-    document.querySelector('#locations100'),
-    document.querySelector('#potpourri100'),
-    document.querySelector('#elves200'),
-    document.querySelector('#dwarves200'),
-    document.querySelector('#hobbits200'),
-    document.querySelector('#books200'),
-    document.querySelector('#locations200'),
-    document.querySelector('#potpourri200'),
-    document.querySelector('#elves300'),
-    document.querySelector('#dwarves300'),
-    document.querySelector('#hobbits300'),
-    document.querySelector('#books300'),
-    document.querySelector('#locations300'),
-    document.querySelector('#potpourri300'),
-    document.querySelector('#elves400'),
-    document.querySelector('#dwarves400'),
-    document.querySelector('#hobbits400'),
-    document.querySelector('#books400'),
-    document.querySelector('#locations400'),
-    document.querySelector('#potpourri400'),
-    document.querySelector('#elves500'),
-    document.querySelector('#dwarves500'),
-    document.querySelector('#hobbits500'),
-    document.querySelector('#books500'),
-    document.querySelector('#locations500'),
-    document.querySelector('#potpourri500')
+
+let btnList = []
+let btnIDs = [
+    '#elves100',
+    '#dwarves100',
+    '#hobbits100',
+    '#books100',
+    '#locations100',
+    '#potpourri100',
+    '#elves200',
+    '#dwarves200',
+    '#hobbits200',
+    '#books200',
+    '#locations200',
+    '#potpourri200',
+    '#elves300',
+    '#dwarves300',
+    '#hobbits300',
+    '#books300',
+    '#locations300',
+    '#potpourri300',
+    '#elves400',
+    '#dwarves400',
+    '#hobbits400',
+    '#books400',
+    '#locations400',
+    '#potpourri400',
+    '#elves500',
+    '#dwarves500',
+    '#hobbits500',
+    '#books500',
+    '#locations500',
+    '#potpourri500'
 ]
+for (let i = 0; i < btnIDs.length; i++) {
+    btnList.push(document.querySelector(btnIDs[i]));
+}
+
 
 let questions = [
     {
@@ -54,20 +82,20 @@ let questions = [
     },
     {
         title: 'Books for 100',
-        question: '',
-        answer: '',
+        question: 'In the novel "The Fellowship of the Ring" this book depicts the celebration of Bilbo\'s eleventy first birthday',
+        answer: 'the first journey' || 'the ring sets out',
         points: 100,
     },
     {
         title: 'Locations for 100',
-        question: '',
-        answer: '',
+        question: 'The Battle of the Hornburg took place in the valley of this location',
+        answer: 'helm\'s deep' || 'helms deep',
         points: 100,
     },
     {
         title: 'Potpourri for 100',
-        question: '',
-        answer: '',
+        question: '1+1',
+        answer: '2',
         points: 100,
     },
     {
@@ -90,31 +118,25 @@ let questions = [
     },
     {
         title: 'Books for 200',
-        question: '',
-        answer: '',
+        question: 'In this book the two Hobbits Merry and Pippin meet the Ent known as Treebeard',
+        answer: 'the treason of isengard' || 'treason of isengard',
         points: 200,
     },
     {
         title: 'Locations for 200',
-        question: '',
-        answer: '',
-        points: 200,
-    },
-    {
-        title: 'Locations for 200',
-        question: '',
-        answer: '',
+        question: 'The fortress of Isengard was located at the southern tip of this mountain range',
+        answer: 'misty mountains',
         points: 200,
     },
     {
         title: 'Potpourri for 200',
-        question: '',
-        answer: '',
+        question: '2+2',
+        answer: '4',
         points: 200,
     },
     {
         title: 'Elves for 300',
-        question: 'Legolas hailed from this elven realm',
+        question: 'Legolas hailed from this Elven realm',
         answer: 'mirkwood',
         points: 300,
     },
@@ -132,20 +154,20 @@ let questions = [
     },
     {
         title: 'Books for 300',
-        question: '',
-        answer: '',
+        question: 'This book shares the same name as the novel in which it is found',
+        answer: 'the return of the king',
         points: 300,
     },
     {
         title: 'Locations for 300',
-        question: '',
-        answer: '',
+        question: 'The creatures known as Ents inhabitied this forest',
+        answer: 'fangorn forest',
         points: 300,
     },
     {
         title: 'Potpourri for 300',
-        question: '',
-        answer: '',
+        question: '5+5',
+        answer: '10',
         points: 300,
     },
     {
@@ -168,20 +190,20 @@ let questions = [
     },
     {
         title: 'Books for 400',
-        question: '',
-        answer: '',
+        question: 'The story "Of Beren and Luthien are contained in this book',
+        answer: 'the silmarillion',
         points: 400,
     },
     {
         title: 'Locations for 400',
-        question: '',
-        answer: '',
+        question: 'Lady Arwen crossed this river to save Frodo as she escaped the Nazgul',
+        answer: 'the bruinen' || 'bruinen' || 'bruinen river' || 'the bruinen river',
         points: 400,
     },
     {
         title: 'Potpourri for 400',
-        question: '',
-        answer: '',
+        question: '6+6',
+        answer: '12',
         points: 400,
     },
     {
@@ -204,67 +226,75 @@ let questions = [
     },
     {
         title: 'Books for 500',
-        question: '',
-        answer: '',
+        question: 'This was the very first book J.R.R. Tokien began in 1918 but wasn\'t published until after his death in 2007',
+        answer: 'the children of hurin' || 'children of hurin',
         points: 500,
     },
     {
         title: 'Locations for 500',
-        question: '',
-        answer: '',
+        question: '9+9',
+        answer: '18',
         points: 500,
     },
     {
         title: 'Potpourri for 500',
-        question: '',
-        answer: '',
+        question: '10+10',
+        answer: '20',
         points: 500,
     },
 
 ]
 
-let userStart = alert('Select a clue by clicking on any point value')
-let userScore1 = document.querySelector('#p1Score')
-let userScore2 = document.querySelector('#p2Score')
-
-let player1Score = 0
-let player2Score = 0
-
-let player1Turn = true
-let player2Turn = false
 
 
 
-
-// function showClue(evt) {
-
-//     let userAnswer = prompt(questions[1].question)
-
-
-// }
-
-
-for (let i = 0; i < btn.length; i++) {
-    btn[i].addEventListener('click', (evt) => {
+for (let i = 0; i < btnList.length; i++) {
+    btnList[i].addEventListener('click', (evt) => {
         let userAnswer = prompt(questions[i].question)
+        while (userAnswer === null) {
+            userAnswer = prompt(questions[i].question);
+
+        }
         if (userAnswer.toLowerCase() === questions[i].answer) {
             if (player1Turn === true) {
-                player1Score += questions[i].points
-                userScore1.innerHTML = player1Score
-                console.log(player1Turn)
-                console.log(player1Score)
+                player1Score += questions[i].points;
+                userScore1.innerHTML = player1Score;
             }
             if (player2Turn === true) {
                 player2Score += questions[i].points
                 userScore2.innerHTML = player2Score
-                console.log(player2Turn)
-                console.log(player2Score)
             }
         }
-        player1Turn = !player1Turn
-        player2Turn = !player2Turn
+        togglePlayerTurn();
+        evt.target.classList.add('hideButton');
+        answeredQuestionsCount += 1;
+        let allQuestionsAnswered = false;
+        // console.log(answeredQuestionsCount);
+        // WHY DOESN'T THIS WORK?!!?!?
 
-    }
-    );
+        // let checkList = (item) => {
+        //     item.classList.contains('hideButton');
+        //     console.log('CONTAINS??', item.classList.contains('hideButton'))
+        // };
 
+        // if(btnList.every(checkList)) {
+        //     allQuestionsAnswered = true;
+        // } else {
+        //     allQuestionsAnswered = false;
+        // }
+        if (answeredQuestionsCount === 30) {
+            allQuestionsAnswered = true;
+        } else {
+            allQuestionsAnswered = false;
+        }
+        if (allQuestionsAnswered === true) {
+            if (player1Score === player2Score) {
+                alert("DRAW!")
+            } else if (player1Score > player2Score) {
+                alert('Player 1 WINS!')
+            } else {
+                alert('Player 2 WINS!')
+            }
+        }
+    });
 }
