@@ -1,4 +1,8 @@
-let userStart = alert('Select a clue by clicking on any point value. Point values indicate level of difficulty')
+const userStart = () => {
+    alert('Select a clue by clicking on any point value. Point values indicate level of difficulty')
+}
+const letsPlay = document.querySelector('#letsPlay')
+
 let userScore1 = document.querySelector('#p1Score')
 let userScore2 = document.querySelector('#p2Score')
 
@@ -10,18 +14,9 @@ let player2Turn = false
 
 let answeredQuestionsCount = 0;
 
-const togglePlayerTurn = () => {
-    if (player1Turn === true) {
-        player1Turn = false;
-        player2Turn = true;
-    } else {
-        player2Turn = false;
-        player1Turn = true;
-    }
-
-}
 
 let btnList = []
+
 let btnIDs = [
     '#elves100',
     '#dwarves100',
@@ -263,19 +258,7 @@ for (let i = 0; i < btnList.length; i++) {
         evt.target.classList.add('hideButton');
         answeredQuestionsCount += 1;
         let allQuestionsAnswered = false;
-        // console.log(answeredQuestionsCount);
-        // WHY DOESN'T THIS WORK?!!?!?
 
-        // let checkList = (item) => {
-        //     item.classList.contains('hideButton');
-        //     console.log('CONTAINS??', item.classList.contains('hideButton'))
-        // };
-
-        // if(btnList.every(checkList)) {
-        //     allQuestionsAnswered = true;
-        // } else {
-        //     allQuestionsAnswered = false;
-        // }
         if (answeredQuestionsCount === 30) {
             allQuestionsAnswered = true;
         } else {
@@ -291,4 +274,19 @@ for (let i = 0; i < btnList.length; i++) {
             }
         }
     });
+}
+
+const togglePlayerTurn = () => {
+    if (player1Turn === true) {
+        player1Turn = false;
+        player2Turn = true;
+    } else {
+        player2Turn = false;
+        player1Turn = true;
+    }
+
+}
+
+letsPlay.addEventListener('click', goToGame)
+goToGame = () => {
 }

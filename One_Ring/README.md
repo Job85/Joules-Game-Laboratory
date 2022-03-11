@@ -25,7 +25,7 @@
     * Double Jeopardy
     * New Clues to play multiple times
 
-## Credits
+## Credits & Citations
 ### MDN Documentation
 [Event_Target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 
