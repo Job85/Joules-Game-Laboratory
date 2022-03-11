@@ -6,6 +6,8 @@
 
 h1 {
     text-align: center;
+    font-size: 45px;
+    padding: 45px;
 }
 
 
@@ -24,10 +26,12 @@ h1 {
 .playerName {
     border-left: 1px solid #f4c91d;
     border-right: 1px solid #f4c91d;
+    font-size: 35px;
 }
 
 .score {
-    border: 1px solid #f4c91d;;
+    border: 1px solid #f4c91d;
+    font-size: 20px;
 }
 
 #container {
@@ -42,6 +46,8 @@ h1 {
 
 .cat {
     border: 1px solid #f4c91d;
+    font-size: 25px;
+    font-family: fantasy;
 }
 
 .clues {
@@ -55,7 +61,8 @@ h1 {
     border: 3px solid rgba(31, 29, 29, 0.406);
     padding: 3px;
     box-shadow: 1px 1px 5px rgba(31, 29, 29, 0.406);
-    width: 100px;
+    width: 150px;
+    height: 35px;
  }
 
  .hideButton {

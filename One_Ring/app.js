@@ -61,7 +61,7 @@ for (let i = 0; i < btnIDs.length; i++) {
 let questions = [
     {
         title: 'Elves for 100',
-        question: 'This elf was the daughter of Elrond \n a. Eowyn \n b. Galadriel \n c. Arwen \n d. Morwen',
+        question: 'This elf was the daughter of Elrond',
         answer: 'arwen',
         points: 100,
     },
@@ -86,13 +86,13 @@ let questions = [
     {
         title: 'Locations for 100',
         question: 'The Battle of the Hornburg took place in the valley of this location',
-        answer: 'helm\'s deep' || 'helms deep',
+        answer: 'helm\'s deep',
         points: 100,
     },
     {
         title: 'Potpourri for 100',
-        question: '1+1',
-        answer: '2',
+        question: 'One Ring to rule them all, One Ring to find them, One Ring to bring them all an in the darkness `this`',
+        answer: 'bind them',
         points: 100,
     },
     {
@@ -116,7 +116,7 @@ let questions = [
     {
         title: 'Books for 200',
         question: 'In this book the two Hobbits Merry and Pippin meet the Ent known as Treebeard',
-        answer: 'the treason of isengard' || 'treason of isengard',
+        answer: 'the treason of isengard',
         points: 200,
     },
     {
@@ -127,8 +127,8 @@ let questions = [
     },
     {
         title: 'Potpourri for 200',
-        question: '2+2',
-        answer: '4',
+        question: 'Elesar ',
+        answer: 'isildur',
         points: 200,
     },
     {
@@ -163,8 +163,8 @@ let questions = [
     },
     {
         title: 'Potpourri for 300',
-        question: '5+5',
-        answer: '10',
+        question: 'In two songs from 1971: "Misty Mountain Hop" and "The Battle of Evermore" this band referenced the works of Tolkien',
+        answer: 'led zeppelin',
         points: 300,
     },
     {
@@ -199,8 +199,8 @@ let questions = [
     },
     {
         title: 'Potpourri for 400',
-        question: '6+6',
-        answer: '12',
+        question: 'The first film adaptation of The Hobbit was released in this year',
+        answer: '1977',
         points: 400,
     },
     {
@@ -212,7 +212,7 @@ let questions = [
     {
         title: 'Dwarves for 500',
         question: 'Thorin II was son of this Dwarf',
-        answer: 'thrain ii' || 'thrain 2',
+        answer: 'thrain ii',
         points: 500,
     },
     {
@@ -224,19 +224,19 @@ let questions = [
     {
         title: 'Books for 500',
         question: 'This was the very first book J.R.R. Tokien began in 1918 but wasn\'t published until after his death in 2007',
-        answer: 'the children of hurin' || 'children of hurin',
+        answer: 'the children of hurin',
         points: 500,
     },
     {
         title: 'Locations for 500',
-        question: '9+9',
-        answer: '18',
+        question: 'The Shire was located in this region of Middle-Earth',
+        answer: 'eriador',
         points: 500,
     },
     {
         title: 'Potpourri for 500',
-        question: '10+10',
-        answer: '20',
+        question: 'Once he held the title of High-captain this Lord of Balrogs was responsible for killing two of the High Kings of the Noldor',
+        answer: 'Gothmog',
         points: 500,
     },
 
