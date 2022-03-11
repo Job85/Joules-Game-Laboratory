@@ -21,12 +21,19 @@
 * Locations
 * Potpourri
 
+## Coming Updates
+    * Double Jeopardy
+    * New Clues to play multiple times
+
 ## Credits
 ### MDN Documentation
 [Event_Target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
 
 ### A README 101
 [Mark_Down](https://www.makeareadme.com/)
+
+###
+[Back_Ground_Image_Styling](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
 
 ## For Tolkien Fans
 [Tolkien_Gateway] (http://tolkiengateway.net/wiki/Main_Page)

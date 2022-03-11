@@ -54,9 +54,6 @@ let btnIDs = [
     '#locations500',
     '#potpourri500'
 ]
-for (let i = 0; i < btnIDs.length; i++) {
-    btnList.push(document.querySelector(btnIDs[i]));
-}
 
 let questions = [
     {
@@ -80,7 +77,7 @@ let questions = [
     {
         title: 'Books for 100',
         question: 'In the novel "The Fellowship of the Ring" this book depicts the celebration of Bilbo\'s eleventy first birthday',
-        answer: 'the first journey' || 'the ring sets out',
+        answer: 'the first journey',
         points: 100,
     },
     {
@@ -194,7 +191,7 @@ let questions = [
     {
         title: 'Locations for 400',
         question: 'Lady Arwen crossed this river to save Frodo as she escaped the Nazgul',
-        answer: 'the bruinen' || 'bruinen' || 'bruinen river' || 'the bruinen river',
+        answer: 'the bruinen',
         points: 400,
     },
     {
@@ -236,11 +233,15 @@ let questions = [
     {
         title: 'Potpourri for 500',
         question: 'Once he held the title of High-captain this Lord of Balrogs was responsible for killing two of the High Kings of the Noldor',
-        answer: 'Gothmog',
+        answer: 'gothmog',
         points: 500,
     },
 
 ]
+
+for (let i = 0; i < btnIDs.length; i++) {
+    btnList.push(document.querySelector(btnIDs[i]));
+}
 
 for (let i = 0; i < btnList.length; i++) {
     btnList[i].addEventListener('click', (evt) => {
